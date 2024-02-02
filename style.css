@@ -1,0 +1,151 @@
+/* font-family: 'Roboto', sans-serif;
+
+COLORS
+teal - #0fb9b1;
+frosted white - rgba(225, 225, 225, .9);
+grey - #95a5a6;
+red - #ee5253
+
+*/
+
+h1 {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    font-size: 36px;
+}
+
+h2 {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    font-size: 30px;
+}
+
+p, label {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 24px;
+}
+
+button {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    font-size: 18px;
+    border: 0;
+    border-radius: 5px;
+    background-color: white;
+}
+
+button:hover {
+    background-color: #F1DA0E;
+    color: white;
+}
+input[type=text] {
+    height: 40px;
+    width: 200px;
+}
+
+body {
+    margin: 0;
+}
+
+/* Flex utility classes */
+/* Defining things like this allows us to easily see the
+parent/children structure from within the HTML document */
+.flex {
+    display: flex;
+}
+
+.column {
+    flex-direction: column;
+}
+
+.row {
+    flex-direction: row;
+}
+
+.space-evenly {
+    justify-content: space-evenly;
+}
+
+.space-around {
+    justify-content: space-around;
+}
+
+.center {
+    justify-content: center;
+}
+
+.align-items-center {
+    align-items: center;
+}
+
+/* CSS Media Query for small layout */
+@media only screen and (max-width: 1045px) {
+    .row {
+        flex-direction: column;
+    }
+    .nav-item {
+        margin-bottom: 20px;
+    }
+
+    .boxes {
+        align-items: center;
+    }
+}
+
+/* Outermost parent container */
+.main-content-container {
+    background: url("./assets/background.jpeg") no-repeat center center fixed;
+    background-size: cover;
+    min-height: 100%;
+}
+
+/* A child of the outermost parent container.
+Defines the turquoise blue background parent
+of the header content children */
+.header {
+    background-color: #ffffff;
+    min-height: 100px;
+    width: 100%;
+    flex-shrink: 0;
+}
+
+/* Child header contents */
+.header-text {
+    margin-right: 30px;
+}
+
+.nav-item {
+    width: 200px;
+}
+
+.white-button{
+    height: 40px;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+/* Child boxes */
+
+.boxes {
+    margin-top: 150px;
+    margin-bottom: 150px;
+    flex-grow: 1;
+}
+
+/* Main box styles */
+.main-box {
+    width: 100%;
+    background-color: rgba(225, 225, 225, .9);
+    padding: 30px;
+}
+
+.main-box-title {
+    margin-bottom: 45px;
+}
+
+.hidden {
+    display: none !important;
+}
