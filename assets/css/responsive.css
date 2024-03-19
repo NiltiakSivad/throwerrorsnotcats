@@ -35,6 +35,8 @@
   
   @media (min-width: 580px) {
   
+    .career-project-list { grid-template-columns: repeat(3, 1fr); }
+
     /**
      * CUSTOM PROPERTY
      */
@@ -216,11 +218,10 @@
   
     .modal-container { padding: 20px; }
   
-    .testimonials-modal {
+    .slideshow-modal {
       display: flex;
       justify-content: flex-start;
       align-items: stretch;
-      gap: 25px;
       padding: 30px;
       border-radius: 20px;
     }
@@ -327,7 +328,7 @@
   
     /* testimonials modal */
   
-    .testimonials-modal {
+    .slideshow-modal {
       gap: 35px;
       max-width: 680px;
     }
